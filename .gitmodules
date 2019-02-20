@@ -1,0 +1,6 @@
+[submodule "sterope"]
+	path = sterope
+	url = https://github.com/glucksfall/sterope.git
+[submodule "pleione"]
+	path = pleione
+	url = https://github.com/glucksfall/pleione.git
