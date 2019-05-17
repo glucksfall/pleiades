@@ -4,3 +4,6 @@
 [submodule "pleione"]
 	path = pleione
 	url = https://github.com/glucksfall/pleione.git
+[submodule "alcyone"]
+	path = alcyone
+	url = https://github.com/glucksfall/alcyone.git
