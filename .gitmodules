@@ -1,6 +1,3 @@
-[submodule "atlas"]
-    path = atlas
-    url = https://github.com/glucksfall/atlas.git
 [submodule "sterope"]
 	path = sterope
 	url = https://github.com/glucksfall/sterope.git
@@ -10,3 +7,6 @@
 [submodule "alcyone"]
 	path = alcyone
 	url = https://github.com/glucksfall/alcyone.git
+[submodule "atlas"]
+	path = atlas
+	url = https://github.com/glucksfall/atlas
