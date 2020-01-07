@@ -62,7 +62,7 @@ def main():
 		keywords=['systems biology', 'stochastic modeling', 'parameter analysis'],
 		python_requires='>=3.0',
 		packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-		install_requires=['atlas_rbm', 'pleione', 'alcyone', 'sterope'],
+		install_requires=['atlas-rbm', 'pleione', 'alcyone', 'sterope'],
 		#package_data={
 			#'example': ['example'],
 		#},
