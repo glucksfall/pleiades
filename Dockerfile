@@ -2,8 +2,8 @@
 FROM continuumio/anaconda3
 
 # Update
-RUN apt-get update
 RUN apt-get install -y apt-utils
+RUN apt-get update
 RUN apt-get upgrade -y
 
 # Install pleiades
@@ -33,7 +33,7 @@ WORKDIR /opt/notebooks
 
 # Set jupyter configuration
 RUN jupyter notebook --generate-config
-COPY jupyter_notebook_config.json /root/.jupyter/jupyter_notebook_config.json
+RUN wget https://raw.githubusercontent.com/glucksfall/pleiades/master/jupyter_notebook_config.json --directory-prefix=/root/.jupyter
 
 # Initiate jupyter server at run time
 CMD ["jupyter", "notebook", "--notebook-dir=/opt/notebooks", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
