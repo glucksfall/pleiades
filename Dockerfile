@@ -1,10 +1,14 @@
 # Use the anaconda3 image as parent image
 FROM continuumio/anaconda3
 
+# set shell
+RUN export SHELL=/bin/bash
+
 # Update
 RUN apt-get install -y apt-utils
 RUN apt-get update
 RUN apt-get upgrade -y
+RUN apt-get install htop
 
 # Install pleiades
 RUN python3 -m pip install pleiades
