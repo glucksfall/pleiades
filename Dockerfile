@@ -5,10 +5,11 @@ FROM continuumio/anaconda3
 RUN export SHELL=/bin/bash
 
 # Update
-RUN apt-get install -y apt-utils
+RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN apt-get update
+RUN apt-get install -y dialog apt-utils
 RUN apt-get upgrade -y
-RUN apt-get install htop
+RUN apt-get install -y htop
 
 # Install pleiades
 RUN python3 -m pip install pleiades
