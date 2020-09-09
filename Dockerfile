@@ -26,6 +26,11 @@ RUN conda install -c alubbock bionetgen
 RUN conda install -c alubbock nfsim
 RUN conda install -c alubbock stochkit
 
+RUN export KAPPAPATH=/opt/conda/bin
+RUN export BNGPATH=/opt/conda/bin
+
+RUN export STOCHKITPATH=/opt/conda/bin
+
 # set common aliases
 RUN alias kasim4=KaSim
 RUN alias kasa=KaSa
