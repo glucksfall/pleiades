@@ -9,7 +9,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 RUN apt-get update
 RUN apt-get install -y dialog apt-utils
 RUN apt-get upgrade -y
-RUN apt-get install -y htop git
+RUN apt-get install -y htop git gcc
 
 # Install pleiades
 RUN python3 -m pip install pleiades
@@ -28,7 +28,6 @@ RUN conda install -c alubbock stochkit
 
 RUN export KAPPAPATH=/opt/conda/bin
 RUN export BNGPATH=/opt/conda/bin
-
 RUN export STOCHKITPATH=/opt/conda/bin
 
 # set common aliases
