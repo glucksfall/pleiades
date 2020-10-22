@@ -9,7 +9,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 RUN apt-get update
 RUN apt-get install -y dialog apt-utils
 RUN apt-get upgrade -y
-RUN apt-get install -y htop git gcc
+RUN apt-get install -y htop git gcc nano
 
 # Install pleiades
 RUN python3 -m pip install pleiades
